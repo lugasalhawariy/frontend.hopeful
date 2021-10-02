@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Satisfy&family=Schoolbell&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Scriptina';
+  src: url("../../font/SCRIPTIN.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scriptina-alt';
+  src: url("../../font/SCRIPALT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-navbar {
+  z-index: 33;
+}
+
+.section-navbar .navbar-hopefull {
+  background-color: #860863 !important;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.section-navbar navbar {
+  -webkit-box-shadow: 0px 4px 100px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 100px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-navbar navbar .navbar-brand {
+  font-family: 'Scriptina';
+  color: white;
+  font-size: 30px;
+  text-shadow: 0.4px 0.2px #ac6dff;
+  text-decoration: none;
+}
+
+.section-navbar navbar .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: lighter;
+}
+
+.section-navbar navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #860863;
+}
+
+.section-navbar navbar .navbar-nav .nav-item .nav-link.active {
+  font-weight: bold;
+}
+
+.section-navbar navbar .hamburg {
+  cursor: pointer;
+}
+
+.section-navbar navbar .hamburg input {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.section-navbar navbar .navbar-nav-mobile {
+  display: none;
+  z-index: 32;
+}
+
+@media (max-width: 991.98px) {
+  .section-navbar navbar .navbar-nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: absolute;
+    width: 60%;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #860863;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 0;
+    list-style: none;
+  }
+  .section-navbar navbar .navbar-nav-mobile.slide {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  .section-navbar navbar .navbar-nav-mobile .nav-item-mobile a {
+    text-decoration: none;
+    color: white;
+  }
+  .section-navbar navbar .navbar-nav-mobile .close-navbar-mobile {
+    position: absolute;
+    cursor: pointer;
+    top: 50vh;
+    left: -35px;
+  }
+  .section-navbar navbar .navbar-nav-mobile .close-navbar-mobile img {
+    width: 55px;
+  }
+}
+
+.section-carousel .overlay-carousel {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.section-carousel .carousel-content-text {
+  position: absolute;
+  z-index: 4;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .section-carousel .carousel-content-text:hover .line {
+    width: 300px;
+    left: 500px;
+  }
+  .section-carousel .carousel-content-text:hover p {
+    color: white;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-carousel .carousel-content-text:hover .line {
+    left: 50px;
+  }
+}
+
+.section-carousel .carousel-content-text p {
+  margin-top: 0.4em;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: 'Satisfy', 'cursive';
+}
+
+@media (max-width: 991.98px) {
+  .section-carousel .carousel-content-text p {
+    color: white;
+    font-size: 22px;
+    opacity: 1 !important;
+  }
+}
+
+.section-carousel .carousel-content-text h1 {
+  color: white;
+  font-family: 'Satisfy', 'cursive';
+  margin-top: -50px;
+  font-size: 100px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.section-carousel .carousel-content-text .line {
+  width: 100px;
+  height: 5px;
+  top: 10px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 991.98px) {
+  .section-carousel .carousel-content-text .line {
+    width: 200px;
+    height: 2px;
+    position: relative;
+    top: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+.section-carousel .carousel-inner .carousel-item img {
+  z-index: 2;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-for-videos img {
+  z-index: 20;
+  margin-top: -50px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.section-wedding-definition {
+  margin-top: 2em;
+  font-family: 'Schoolbell', 'cursive';
+}
+
+.section-wedding-definition p {
+  color: #676767;
+  font-size: 26px;
+}
+
+.section-wedding-definition .photo-definition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-wedding-definition .photo-definition:hover div:nth-child(3) {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.section-wedding-definition .photo-definition:hover div:nth-child(2) {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.section-wedding-definition .photo-definition div:nth-child(3) {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section-wedding-definition .photo-definition div:nth-child(3) img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.section-wedding-definition .photo-definition div:nth-child(2) {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #EAEAEA;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section-wedding-definition .photo-definition div:nth-child(1) {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #D8D8D8;
+}
+
+.section-motivation {
+  margin-top: 2.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.section-motivation .wrapper-section-motivation {
+  background-color: #860863;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.section-motivation .wrapper-section-motivation p {
+  color: white;
+  font-family: 'Schoolbell', 'cursive';
+}
+
+@media (max-width: 991.98px) {
+  .section-motivation .wrapper-section-motivation {
+    background-color: transparent !important;
+  }
+  .section-motivation .wrapper-section-motivation .slick-dots {
+    position: absolute;
+    border-radius: 0;
+    right: 150px;
+  }
+  .section-motivation .wrapper-section-motivation p {
+    color: #676767;
+    text-align: left;
+    padding-left: 1em;
+  }
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,49 @@
+.section-wedding-definition {
+    margin-top: 2em;
+    font-family: 'Schoolbell', 'cursive';
+    p{
+        color: #676767;
+        font-size: 26px;
+    }
+
+    .photo-definition {
+        display: flex;
+        flex-direction: column;
+
+        &:hover{
+            div:nth-child(3){
+                transform: rotate(5deg);
+            }
+
+            div:nth-child(2){
+                transform: rotate(10deg);
+            }
+        }
+
+        div:nth-child(3){
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            transition: all 0.3s;
+            
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        div:nth-child(2){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: #EAEAEA;
+            transition: all 0.3s;
+        }
+        div:nth-child(1){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: #D8D8D8;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.section-motivation {
+    margin-top: 2.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    .wrapper-section-motivation {
+        background-color: #860863;
+        height: 100px;
+        margin-bottom: 10px;
+        p {
+            color: white;
+            font-family: 'Schoolbell', 'cursive';
+        }
+
+        // ukuran tablet ke bawah
+        @media (max-width: 991.98px) {
+            background-color: transparent !important;
+            .slick-dots {
+                position: absolute;
+                border-radius: 0;
+                right: 150px; // play with the number of pixels to position it as you want
+            }
+            p {
+                color: #676767;
+                text-align: left;
+                padding-left: 1em;
+            }
+        }
+    }
+}

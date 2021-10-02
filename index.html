@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <!-- PROJECT INI DIBUAT OLEH : LUGAS ALHAWARIY -->
+    <!-- PROJECT INI DIBUAT MENGGUNAKAN BOOTSTRAPS 5.1 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style for Home Page -->
+    <link rel="stylesheet" href="vendor/bootstrap5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/pages/home.css">
+    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick-1.8.1/slick/slick-theme.css">
+
+    <title>Hopefull</title>
+  </head>
+  <body>
+    <!-- START: NAVBAR -->
+    <section class="section-navbar">
+      <navbar class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand">Hopefull</a>
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Paket</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Toko</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+          
+          <!-- start:tombol hamburg -->
+          <div class="hamburg d-flex d-lg-none">
+            <input id="hamburg" type="checkbox" name="hamburg" onclick="navbarMobile()">
+            <img src="/images/hamburg.svg" alt="hopefull memiliki berbagai paket pernikahan yang murah">
+          </div>
+          <!-- end:tombol hamburg -->
+          <!-- start:navbar-link for mobile -->
+          <ul class="navbar-nav-mobile" id="navbarNavMobile">
+            <div class="close-navbar-mobile">
+              <img id="closeNav" src="/images/btn-close-navbar.svg" onclick="navbarClose()" alt="">
+            </div>
+            <li class="nav-item-mobile">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item-mobile">
+              <a href="#" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item-mobile">
+              <a href="#" class="nav-link">Paket</a>
+            </li>
+            <li class="nav-item-mobile">
+              <a href="#" class="nav-link">Toko</a>
+            </li>
+            <li class="nav-item-mobile">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+          <!-- end:navbar-link for mobile -->
+        </div>
+      </navbar>
+    </section>
+    <!-- END: NAVBAR -->
+
+    <!-- START: CAROUSEL -->
+    <section class="section-carousel">
+      <div class="overlay-carousel"></div>
+      <div class="carousel-content-text d-flex justify-content-center h-100 w-100 text-center align-items-center">
+        <h1>Destiny</h1>
+        <span class="line"></span>
+        <p>Aku memilihmu sebagai takdirku</p>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/carousel-1.jpg" class="d-block w-100" alt="hopefull adalah website penyedia jasa wedding">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/carousel-2.jpg" class="d-block w-100" alt="hopefull adalah website penyedia jasa wedding">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: CAROUSEL -->
+
+    <!-- START: BTN VIDEOS YT -->
+    <div class="btn-for-videos d-flex justify-content-center">
+      <img src="/images/btn-play-videos.svg" alt="hopefull menyediakan berbagai paket wedding termurah dengan kualitas memuaskan" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalVideos"></img>
+      <!-- start:modal videos -->
+        <div class="modal fade" id="modalVideos" tabindex="-1" aria-labelledby="modalVideosLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content border-3 border-warning rounded-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/5Uu_2eNCO5c?start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- end:modal videos -->
+    </div>
+    <!-- END: BTN VIDEOS YT -->
+
+    <!-- START: SECTION WEDDING DEFINITION -->
+    <section class="section-wedding-definition d-lg-flex d-none container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-4">
+          <a class="photo-definition" href="#">
+            <div></div>
+            <div></div>
+            <div><img src="/images/carousel-2.jpg" alt=""></div>
+          </a>
+        </div>
+        <div class="col-8">
+          <p>
+            Pernikahan adalah upacara pengikatan janji nikah yang dirayakan atau dilaksanakan oleh dua orang dengan maksud meresmikan ikatan perkawinan secara norma agama, norma hukum, dan norma sosial. Upacara pernikahan memiliki banyak ragam dan variasi menurut tradisi suku bangsa, agama, budaya, maupun kelas sosial. Penggunaan adat atau aturan tertentu kadang-kadang berkaitan dengan aturan atau hukum agama tertentu.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END: SECTION WEDDING DEFINITION -->
+
+    <!-- START: SECTION MOTIVATION -->
+    <section class="section-motivation">
+      <div class="wrapper-section-motivation d-flex align-items-center">
+        <div class="text-center">
+          <p>
+            "Jika melangkah tingkat tertinggi beruntunglah yang tetap bertahan dan menjadikan cinta hanya ujian dan kesabaran sebagai penjaganya."
+          </p>
+        </div>
+        <div class="text-center">
+          <p>
+            "Kamu jungkir balikpun jika ia jodohku, tetap aku yang dapat" -Habibie
+          </p>
+        </div>
+        <div class="text-center">
+          <p>
+            "Sejatinya pernikahan adalah lembaran baru kehidupan, kebahagiaan, kebersamaan, dan hal-hal baik lainnya yang menyertai. Selamat menempuh hidup baru."
+          </p>
+        </div>
+        <div class="text-center">
+          <p>
+            "Sejatinya pernikahan adalah lembaran baru kehidupan, kebahagiaan, kebersamaan, dan hal-hal baik lainnya yang menyertai. Selamat menempuh hidup baru."
+          </p>
+        </div>
+        <div class="text-center">
+          <p>
+            "Sejatinya pernikahan adalah lembaran baru kehidupan, kebahagiaan, kebersamaan, dan hal-hal baik lainnya yang menyertai. Selamat menempuh hidup baru."
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END: SECTION MOTIVATION -->
+  
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="module" src="/vendor/bootstrap5/dist/js/bootstrap.min.js"></script>
+    <script src="/script/navbar-fixed.js"></script>
+    <script src="/script/navbar-mobile.js"></script>
+    <script src="/vendor/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+      $('.wrapper-section-motivation').slick({
+        dots: true
+      });
+    </script>
+  </body>
+</html>
