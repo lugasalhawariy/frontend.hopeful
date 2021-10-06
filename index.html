@@ -163,7 +163,110 @@
       </div>
     </section>
     <!-- END: SECTION MOTIVATION -->
-  
+
+    <!-- START: SECTION PAKET -->
+    <section class="section-popular container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h1 class="title-popular">Popular</h1>
+        </div>
+      </div>
+      <div class="row">
+        <!-- start:photo popular utama -->
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <a class="main-thumbnail" href="#">
+                <div class="text">
+                  <h2>Paket Hopefull</h2>
+                  <p class="price">
+                    Rp. 78.000.000,00
+                  </p>
+                </div>
+                <button class="btn-to-detail-popular btn w-100">
+                  Details
+                </button>
+                <div class="overlay"></div>
+                <img id="img-main-thumbnail" src="/images/jazmin-quaynor-8ioenvmof-I-unsplash.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end:photo popular utama -->
+
+        <!-- start:photo popular thumbnail -->
+        <div class="col-12 col-lg-8">
+          <div class="row wrapper-section-popular">
+            <div class="get-popular mx-2">
+              <div class="row">
+                <div class="col-12">
+                  <a class="thumbnail" href="#">
+                    <div class="text">
+                      <h2>Paket HighCheap</h2>
+                      <p class="price">
+                        Rp. 40.000.000,00
+                      </p>
+                    </div>
+                    <div class="overlay"></div>
+                    <img class="thumb-item" src="/images/shardayyy-photography-fJzmPe-a0eU-unsplash.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="get-popular mx-2">
+              <div class="row">
+                <div class="col-12">
+                  <a class="thumbnail" href="#">
+                    <div class="text">
+                      <h2>Paket Simsalabim</h2>
+                      <p class="price">
+                        Rp. 100.000.000,00
+                      </p>
+                    </div>
+                    <div class="overlay"></div>
+                    <img class="thumb-item" src="/images/alyssa-hurley-IdU1Si3wJ-I-unsplash.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="get-popular mx-2">
+              <div class="row">
+                <div class="col-12">
+                  <a class="thumbnail" href="#">
+                    <div class="text">
+                      <h2>Paket Berikat-ikat</h2>
+                      <p class="price">
+                        Rp. 30.000.000,00
+                      </p>
+                    </div>
+                    <div class="overlay"></div>
+                    <img class="thumb-item" src="/images/carousel-2.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="get-popular mx-2">
+              <div class="row">
+                <div class="col-12">
+                  <a class="thumbnail" href="#">
+                    <div class="text">
+                      <h2>Paket Hopefull</h2>
+                      <p class="price">
+                        Rp. 78.000.000,00
+                      </p>
+                    </div>
+                    <div class="overlay"></div>
+                    <img class="thumb-item" src="/images/carousel-1.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end:photo popular thumbnail -->
+      </div>
+    </section>
+    <!-- END: SECTION PAKET -->
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- JavaScript -->
@@ -176,6 +279,14 @@
     <script>
       $('.wrapper-section-motivation').slick({
         dots: true
+      });
+    </script>
+    <script>
+      $('.wrapper-section-popular').slick({
+        dots: true,
+        slidesToShow: 1,
+        variableWidth: true,
+        arrows: true
       });
     </script>
   </body>
