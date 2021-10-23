@@ -1,0 +1,38 @@
+section.section-blog {
+    .title-blog {
+        font-family: "Scriptina";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .thumbnail-blog {
+        text-decoration: none;
+        margin-top: 25px;
+        .overlay {
+            transition: all .3s;
+            border: 5px solid white;
+            &:hover {
+                opacity: .5;
+                border: 5px solid blueviolet;
+            }
+
+            .img-thumbnail-blog {
+                object-fit: cover;
+                width: 100%;
+                height: 450px;
+            }
+        }
+        .text-thumbnail-blog {
+            text-align: center;
+            .judul {
+                font-family: 'Schoolbell', 'cursive';
+                font-size: 30px;
+                color: black;
+            }
+        }
+    }
+}

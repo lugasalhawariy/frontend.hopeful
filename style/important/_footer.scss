@@ -1,0 +1,20 @@
+footer.footer-finish {
+    background-color: #4F4F4F;
+    height: 100px;
+    text-align: end;
+
+    @media (max-width: 991.98px) {
+        height: 60px;
+        text-align: center;
+    }
+
+    p {
+        color: white;
+        font-family: 'Montserrat Alternates', 'sans-serif';
+        font-size: 22px;
+
+        @media (max-width: 991.98px) {
+            font-size: 18px;
+        }
+    }
+}

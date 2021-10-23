@@ -119,6 +119,31 @@ body {
   }
 }
 
+footer.footer-finish {
+  background-color: #4F4F4F;
+  height: 100px;
+  text-align: end;
+}
+
+@media (max-width: 991.98px) {
+  footer.footer-finish {
+    height: 60px;
+    text-align: center;
+  }
+}
+
+footer.footer-finish p {
+  color: white;
+  font-family: 'Montserrat Alternates', 'sans-serif';
+  font-size: 22px;
+}
+
+@media (max-width: 991.98px) {
+  footer.footer-finish p {
+    font-size: 18px;
+  }
+}
+
 .section-carousel .overlay-carousel {
   background-color: black;
   opacity: 0.4;
@@ -309,6 +334,43 @@ body {
   }
 }
 
+@media (max-width: 991.98px) {
+  .section-popular {
+    background-color: #860863;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-popular .title-popular {
+    text-align: center;
+    color: white;
+  }
+  .section-popular .mobile-screen-popular .head-popular-mobile img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
+  }
+  .section-popular .mobile-screen-popular .body-popular-mobile .title {
+    color: white;
+    font-family: 'Satisfy', 'cursive';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .section-popular .mobile-screen-popular .body-popular-mobile .price {
+    text-align: end;
+    font-family: 'Schoolbell', 'cursive';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FDF5B1;
+  }
+}
+
 .section-popular .title-popular {
   font-family: 'Scriptina';
 }
@@ -400,6 +462,7 @@ body {
 
 .section-popular .wrapper-section-popular .get-popular .thumbnail:hover .overlay {
   width: 50vw;
+  background-color: blueviolet;
 }
 
 .section-popular .wrapper-section-popular .get-popular .thumbnail:hover .btn-to-detail-popular {
@@ -456,145 +519,370 @@ body {
   }
 }
 
+@media (max-width: 991.98px) {
+  section.section-aksesoris .title-popular {
+    text-align: center;
+  }
+  section.section-aksesoris .wrapper-aksesoris {
+    background: none;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.section-aksesoris .wrapper-aksesoris .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 100px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    left: 0;
+  }
+  section.section-aksesoris .wrapper-aksesoris .slick-dots li button::before {
+    color: #E205A5;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    vertical-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris img {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 4;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris .overlay {
+    background-color: black;
+    z-index: 5;
+    opacity: 0.3;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris .title {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 6;
+    color: white;
+    font-family: 'Satisfy', 'cursive';
+    text-shadow: 1px solid cornsilk;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 16px;
+  }
+}
+
 section.section-aksesoris .title-popular {
   font-family: "Scriptina";
 }
 
-section.section-aksesoris .wrapper-aksesoris {
-  background: url("/images/bg-section-aksesoris.svg");
-  width: 100%;
-  height: 474px;
+@media (min-width: 992px) {
+  section.section-aksesoris .wrapper-aksesoris {
+    background: url("/images/bg-section-aksesoris.svg");
+    width: 100%;
+    height: 474px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1) {
+    margin-top: 100px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1) img {
+    width: 120px;
+    height: 120px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1) .overlay {
+    background-color: blueviolet;
+    opacity: 0;
+    z-index: 5;
+    width: 140px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1) .title {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    opacity: 0;
+    z-index: 6;
+    color: white;
+    font-family: 'Satisfy', 'cursive';
+    text-shadow: 1px solid cornsilk;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1):hover .overlay {
+    width: 120px;
+    opacity: 0.7;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1):hover .title {
+    opacity: 1;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2) {
+    margin-top: 150px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2) img {
+    width: 150px;
+    height: 150px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2) .overlay {
+    background-color: blueviolet;
+    opacity: 0;
+    z-index: 5;
+    width: 170px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2) .title {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    z-index: 6;
+    color: white;
+    font-family: 'Satisfy', 'cursive';
+    text-shadow: 1px solid cornsilk;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2):hover .overlay {
+    width: 150px;
+    opacity: 0.7;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2):hover .title {
+    opacity: 1;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3) {
+    margin-top: 200px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3) img {
+    width: 180px;
+    height: 180px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3) .overlay {
+    background-color: blueviolet;
+    opacity: 0;
+    z-index: 5;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3) .title {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    opacity: 0;
+    z-index: 6;
+    color: white;
+    font-family: 'Satisfy', 'cursive';
+    text-shadow: 1px solid cornsilk;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3):hover .overlay {
+    opacity: 0.7;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3):hover .title {
+    opacity: 1;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) {
+    margin-top: 150px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) img {
+    width: 150px;
+    height: 150px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) .overlay {
+    background-color: blueviolet;
+    opacity: 0;
+    z-index: 5;
+    width: 170px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) .title {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    z-index: 6;
+    color: white;
+    font-family: 'Satisfy', 'cursive';
+    text-shadow: 1px solid cornsilk;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4):hover .overlay {
+    width: 150px;
+    opacity: 0.7;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4):hover .title {
+    opacity: 1;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) {
+    margin-top: 100px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) img {
+    width: 120px;
+    height: 120px;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) .overlay {
+    background-color: blueviolet;
+    opacity: 0;
+    z-index: 5;
+    width: 140px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) .title {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    opacity: 0;
+    z-index: 6;
+    color: white;
+    font-family: 'Satisfy', 'cursive';
+    text-shadow: 1px solid cornsilk;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5):hover .overlay {
+    width: 120px;
+    opacity: 0.7;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5):hover .title {
+    opacity: 1;
+  }
+  section.section-aksesoris .wrapper-aksesoris .content-aksesoris img {
+    border-radius: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 4;
+  }
 }
 
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris {
+section.section-blog .title-blog {
+  font-family: "Scriptina";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1) {
-  margin-top: 100px;
+section.section-blog .thumbnail-blog {
+  text-decoration: none;
+  margin-top: 25px;
 }
 
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(1) img {
-  width: 120px;
-  height: 120px;
+section.section-blog .thumbnail-blog .overlay {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 5px solid white;
 }
 
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2) {
-  margin-top: 150px;
+section.section-blog .thumbnail-blog .overlay:hover {
+  opacity: .5;
+  border: 5px solid blueviolet;
 }
 
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(2) img {
-  width: 150px;
-  height: 150px;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3) {
-  margin-top: 200px;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(3) img {
-  width: 180px;
-  height: 180px;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) {
-  margin-top: 150px;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) img {
-  width: 150px;
-  height: 150px;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) .overlay {
-  background-color: blueviolet;
-  opacity: 0;
-  z-index: 5;
-  width: 170px;
-  height: 150px;
-  border-radius: 100%;
-  position: absolute;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4) .title {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  opacity: 0;
-  z-index: 6;
-  color: white;
-  font-family: 'Satisfy', 'cursive';
-  text-shadow: 1px solid cornsilk;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4):hover .overlay {
-  width: 150px;
-  opacity: 0.7;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(4):hover .title {
-  opacity: 1;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) {
-  margin-top: 100px;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) img {
-  width: 120px;
-  height: 120px;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) .overlay {
-  background-color: blueviolet;
-  opacity: 0;
-  z-index: 5;
-  width: 140px;
-  height: 120px;
-  border-radius: 100%;
-  position: absolute;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5) .title {
-  position: absolute;
-  height: 120px;
-  width: 120px;
-  opacity: 0;
-  z-index: 6;
-  color: white;
-  font-family: 'Satisfy', 'cursive';
-  text-shadow: 1px solid cornsilk;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5):hover .overlay {
-  width: 120px;
-  opacity: 0.7;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris:nth-child(5):hover .title {
-  opacity: 1;
-}
-
-section.section-aksesoris .wrapper-aksesoris .content-aksesoris img {
-  border-radius: 100%;
+section.section-blog .thumbnail-blog .overlay .img-thumbnail-blog {
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 4;
+  width: 100%;
+  height: 450px;
+}
+
+section.section-blog .thumbnail-blog .text-thumbnail-blog {
+  text-align: center;
+}
+
+section.section-blog .thumbnail-blog .text-thumbnail-blog .judul {
+  font-family: 'Schoolbell', 'cursive';
+  font-size: 30px;
+  color: black;
+}
+
+section.footer-information h3 {
+  font-family: 'Montserrat Alternates', 'sans-serif';
+  color: #770082;
+}
+
+section.footer-information p a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=home.css.map */
