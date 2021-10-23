@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Satisfy&family=Schoolbell&display=swap");
-body {
+body, html {
   overflow-x: hidden;
 }
 
@@ -325,6 +325,7 @@ footer.footer-finish p {
   .section-motivation .wrapper-section-motivation .slick-dots {
     position: absolute;
     border-radius: 0;
+    left: 0;
     right: 150px;
   }
   .section-motivation .wrapper-section-motivation p {
@@ -597,7 +598,7 @@ footer.footer-finish p {
     text-shadow: 1px solid cornsilk;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    font-size: 16px;
+    font-size: 25px;
   }
 }
 
